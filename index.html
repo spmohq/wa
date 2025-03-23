@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Prasad Mukherjee</title>
+    <link rel="icon" href="https://spmukherjee.biz/spm.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Bengali&display=swap">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+        $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); 
+    </script>
+    
+    <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 85 )) {
+                return false;
+            }
+        };
+    </script>
+
+    <style>
+    .bengali-text {
+        font-family: 'Noto Sans Bengali', sans-serif;
+        font-size: 18px;
+        color: #333;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .whatsapp-btn {
+        text-decoration: none;
+        color: #fff;
+        background-color: #25D366;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 15px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .whatsapp-btn:hover {
+        background-color: #1EBE5D;
+    }
+    .facebook-btn {
+        text-decoration: none;
+        color: #fff;
+        background-color: #4267B2;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 15px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .facebook-btn:hover {
+        background-color: #365899;
+    }
+    </style>
+</head>
+<BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <img src="name.jpg" alt="Profile Image" class="profile-image">
+    <div style="padding-bottom: 20px;"></div>
+    <header style="font-size: 28px;">Siva Prasad Mukherjee</header>
+    
+    <p>
+        <button class="whatsapp-btn" onclick="openWhatsAppChannel()">Join Siva's WhatsApp Channel</button>
+    </p>
+    
+    <footer>
+        <button class="facebook-btn" onclick="openFacebookProfile()">Follow Siva on Facebook</button>
+
+        <div style="padding-bottom: 20px;"></div>
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script>.&nbsp;Siva Prasad Mukherjee. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openWhatsAppChannel() {
+            var waDeepLink = "whatsapp://channel/0029Vb5eVhPKrWQyesmXme23";
+            var waWebLink = "https://whatsapp.com/channel/0029Vb5eVhPKrWQyesmXme23";
+
+            window.location.href = waDeepLink;
+
+            setTimeout(function() {
+                window.location.href = waWebLink;
+            }, 2000);
+        }
+
+        function openFacebookProfile() {
+            var fbDeepLink = "fb://facewebmodal/f?href=https://www.facebook.com/socjhq/";
+            var fbWebLink = "https://www.facebook.com/socjhq/";
+
+            window.location.href = fbDeepLink;
+
+            setTimeout(function() {
+                window.location.href = fbWebLink;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
